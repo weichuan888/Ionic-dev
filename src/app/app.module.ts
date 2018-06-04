@@ -13,8 +13,10 @@ import { ListPage } from '../pages/list/list';
 
 //Component
 import { TitlePartialComponent } from '../components/title-partial/title-partial';
-import { DataProvider } from '../providers/data/data';
 
+// Provider
+import { DataProvider } from '../providers/data/data';
+import { ListPartialComponent } from '../components/list-partial/list-partial';
 
 
 @NgModule({
@@ -22,7 +24,8 @@ import { DataProvider } from '../providers/data/data';
     MyApp,
     HomePage,
     ListPage,
-    TitlePartialComponent
+    TitlePartialComponent,
+    ListPartialComponent,
   ],
   imports: [
     BrowserModule,
