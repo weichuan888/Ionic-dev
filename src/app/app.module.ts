@@ -17,6 +17,9 @@ import { TitlePartialComponent } from '../components/title-partial/title-partial
 // Provider
 import { DataProvider } from '../providers/data/data';
 import { ListPartialComponent } from '../components/list-partial/list-partial';
+import { Camera } from '@ionic-native/camera';
+
+
 
 
 @NgModule({
@@ -41,7 +44,8 @@ import { ListPartialComponent } from '../components/list-partial/list-partial';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    DataProvider
+    DataProvider,
+    Camera
   ]
 })
 export class AppModule {}

@@ -1,5 +1,7 @@
-<ul>
+<ion-list no-lines>
   <div *ngFor="let item of list">
-      <li *ngIf="item.status"> {{ item.name }} {{ item.role }}</li>
-  </div>
-</ul>
+    <button ion-item *ngIf="item.status">
+      {{ item.name }} {{ item.role }}
+    </button> 
+  </div>  
+</ion-list>

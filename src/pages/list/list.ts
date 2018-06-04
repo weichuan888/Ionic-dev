@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
 import { DataProvider } from '../../providers/data/data';
 
 
@@ -12,8 +12,11 @@ export class ListPage {
 
   
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private data:DataProvider) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private data:DataProvider, public viewCtrl: ViewController) {
   
+  }
+  dismiss() {
+    this.viewCtrl.dismiss();
   }
 
 }
